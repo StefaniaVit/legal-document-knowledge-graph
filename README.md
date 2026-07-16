@@ -112,10 +112,48 @@ independent benchmark.
 ## Setup
 
 ```bash
+git clone https://github.com/StefaniaVit/legal-document-knowledge-graph.git
+cd legal-document-knowledge-graph
 python3.11 -m venv .venv          # or any Python 3.9+
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
+
+### Quick demo (just run the app — no PDF downloads, no local model, no extraction run)
+
+The extracted data (`data/processed/`, `data/chunks/`, `data/extraction_all.jsonl`) is already
+committed to this repo. To run the search UI against it, you only need:
+
+**1. A free Neo4j AuraDB instance** — create one at `console.neo4j.io`, then put its
+credentials in a `.env` file at the project root:
+
+```
+NEO4J_URI=...
+NEO4J_USERNAME=...
+NEO4J_PASSWORD=...
+NEO4J_DATABASE=...
+```
+
+**2. A free Gemini API key** — from `aistudio.google.com/apikey` (no credit card required),
+added to the same `.env` file:
+
+```
+GEMINI_API_KEY=...
+```
+
+**3. Load the graph and run the app:**
+
+```bash
+python -m src.graph.neo4j_loader     # loads the committed extraction data into your Neo4j instance
+streamlit run app.py                 # opens the search UI at localhost:8501
+```
+
+That's the whole "someone else can run this" path — no local LLM, no GPU, no multi-hour job.
+
+### Full reproduction (redo extraction from the raw PDFs yourself)
+
+Only needed if you want to re-run ingestion/extraction itself, e.g. to verify the pipeline or
+try a different model:
 
 **1. Download source documents manually.** EUR-Lex blocks automated downloads (AWS WAF), so
 PDFs must be fetched by hand from
@@ -125,26 +163,17 @@ the CELEX numbers used, and `check_downloads()` to verify what's present.
 
 **2. Download the local LLM.** Qwen2.5-7B-Instruct-GGUF (Q4_K_M quantization) from Hugging
 Face, placed at `models/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf` (+ its second shard).
-Not checked into git (~4.4GB).
+Not checked into git (~4.4GB). A 16GB+ unified/VRAM memory machine is recommended — see
+[`CLAUDE.md`](CLAUDE.md) for why.
 
-**3. With the venv activated, run the pipeline:**
+**3. Run the pipeline:**
 
 ```bash
 python scripts/01_ingest.py               # parse PDFs -> data/processed/
 python -m src.ingestion.chunker           # -> data/chunks/
 python scripts/03_extract_all.py          # entity/relation extraction, several hours
-python -m src.graph.neo4j_loader          # load into Neo4j (needs .env, see below)
+python -m src.graph.neo4j_loader          # load into Neo4j (needs .env, above)
 streamlit run app.py                      # search UI
-```
-
-**4. Environment variables** (`.env`, gitignored):
-
-```
-NEO4J_URI=...
-NEO4J_USERNAME=...
-NEO4J_PASSWORD=...
-NEO4J_DATABASE=...
-GEMINI_API_KEY=...        # free tier, aistudio.google.com/apikey
 ```
 
 Full command reference, all architecture decisions with their reasoning, every bug found and
