@@ -30,7 +30,8 @@ Most "RAG demo" projects retrieve by vector similarity over arbitrary chunks. Th
 ## Demo
 
 ```bash
-.venv/bin/streamlit run app.py
+source .venv/bin/activate
+streamlit run app.py
 ```
 
 Ask a question (e.g. *"What obligations does ENISA have?"*) and the UI shows, in order:
@@ -41,20 +42,16 @@ Ask a question (e.g. *"What obligations does ENISA have?"*) and the UI shows, in
 
 ## Results
 
-Two full rounds of extraction were run and evaluated against an AI-assisted labeled sample
-(see [Evaluation methodology](#evaluation-methodology) below for exactly what "AI-assisted"
-means here — this is **not** independent human-validated ground truth):
+Upgrading extraction from Qwen2.5-3B to Qwen2.5-7B raised entity precision from **44% to 62%**
+on a hand-checked sample, concentrated exactly where the 3B failure analysis predicted it would:
+mistagging mechanisms/frameworks as specific enacted laws (`LEGAL_ACT` type confusion). Relation
+precision was also measured but the samples (10 and 5 relations) are too small to draw a
+before/after conclusion from.
 
-| Round | Model | Entity precision | Relation precision | Sample |
-|---|---|---|---|---|
-| 1 | Qwen2.5-3B | 44.1% | 20.0% | 59 entities / 10 relations |
-| 2 | Qwen2.5-7B | **62.3%** (+18.2pp) | 0.0% (n=5, too small to trust) | 53 entities / 5 relations |
-
-The 7B upgrade produced a real, meaningful precision gain, concentrated exactly where round 1's
-failure analysis predicted it would: `LEGAL_ACT` type-boundary confusion (mechanisms/frameworks
-mistagged as specific enacted laws) improved from 25% → 45%. Full per-type breakdowns and
-failure-mode analysis are tracked per-run in MLflow (`mlruns/`, experiment
-`legal-kg-extraction-eval`) and in [`CLAUDE.md`](CLAUDE.md).
+This is evaluated against an **AI-assisted labeled sample, not independent human-validated
+ground truth** — see [Evaluation methodology](#evaluation-methodology). Full per-type
+breakdowns and failure-mode analysis for both rounds are tracked in MLflow (`mlruns/`,
+experiment `legal-kg-extraction-eval`) and in [`CLAUDE.md`](CLAUDE.md).
 
 ## Architecture
 
@@ -116,7 +113,8 @@ independent benchmark.
 
 ```bash
 python3.11 -m venv .venv          # or any Python 3.9+
-.venv/bin/pip install -r requirements.txt
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
 **1. Download source documents manually.** EUR-Lex blocks automated downloads (AWS WAF), so
@@ -129,14 +127,14 @@ the CELEX numbers used, and `check_downloads()` to verify what's present.
 Face, placed at `models/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf` (+ its second shard).
 Not checked into git (~4.4GB).
 
-**3. Run the pipeline:**
+**3. With the venv activated, run the pipeline:**
 
 ```bash
-.venv/bin/python scripts/01_ingest.py               # parse PDFs -> data/processed/
-.venv/bin/python -m src.ingestion.chunker           # -> data/chunks/
-.venv/bin/python scripts/03_extract_all.py          # entity/relation extraction, several hours
-.venv/bin/python -m src.graph.neo4j_loader          # load into Neo4j (needs .env, see below)
-.venv/bin/streamlit run app.py                      # search UI
+python scripts/01_ingest.py               # parse PDFs -> data/processed/
+python -m src.ingestion.chunker           # -> data/chunks/
+python scripts/03_extract_all.py          # entity/relation extraction, several hours
+python -m src.graph.neo4j_loader          # load into Neo4j (needs .env, see below)
+streamlit run app.py                      # search UI
 ```
 
 **4. Environment variables** (`.env`, gitignored):
