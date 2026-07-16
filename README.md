@@ -23,9 +23,9 @@ Most "RAG demo" projects retrieve by vector similarity over arbitrary chunks. Th
   **local, open-weight LLM** (Qwen2.5-7B via `llama.cpp`) — no API key, no per-token cost, no
   rate limit. A hosted model (Gemini, free tier) is used only for the low-volume interactive
   query layer, a deliberate and explicit exception, not an inconsistency.
-- Is evaluated honestly: precision is measured against an **AI-assisted labeled sample**, and
-  the README and code both say so explicitly rather than implying "human-validated ground
-  truth." Two full extraction rounds (3B → 7B) are compared before/after, tracked in MLflow.
+- Is evaluated honestly: precision is measured against an **AI-assisted labeled sample**, not
+  independent human-validated ground truth (see [Evaluation methodology](#evaluation-methodology)).
+  Two full extraction rounds (3B → 7B) are compared before/after, tracked in MLflow.
 
 ## Demo
 
@@ -148,7 +148,7 @@ python -m src.graph.neo4j_loader     # loads the committed extraction data into 
 streamlit run app.py                 # opens the search UI at localhost:8501
 ```
 
-That's the whole "someone else can run this" path — no local LLM, no GPU, no multi-hour job.
+This is the minimal path to try the demo — no local LLM, no GPU, no multi-hour job.
 
 ### Full reproduction (redo extraction from the raw PDFs yourself)
 
