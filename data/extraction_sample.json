@@ -1,0 +1,812 @@
+[
+  {
+    "chunk_id": "32016R0679_article_65_1",
+    "entities": [
+      {
+        "text": "supervisory authorities",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Board",
+        "type": "LEGAL_CONCEPT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32016R0679_recital_56_0",
+    "entities": [
+      {
+        "text": "Union or Member State law",
+        "type": "LEGAL_ACT"
+      },
+      {
+        "text": "Member States",
+        "type": "ORGANIZATION"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32016R0679_recital_14_0",
+    "entities": [
+      {
+        "text": "supervisory authority",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Union institutions and bodies",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Member States",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Commission Recommendation 2003/361/EC (1)",
+        "type": "LEGAL_ACT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32016R0679_recital_137_0",
+    "entities": [
+      {
+        "text": "supervisory authorities",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "mutual assistance",
+        "type": "OBLIGATION"
+      }
+    ],
+    "relations": [
+      {
+        "subject": "supervisory authorities",
+        "relation": "SUBJECT_TO",
+        "object": "mutual assistance"
+      }
+    ]
+  },
+  {
+    "chunk_id": "32016R0679_recital_123_0",
+    "entities": [
+      {
+        "text": "Member State",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "supervisory authority",
+        "type": "ORGANIZATION"
+      }
+    ],
+    "relations": [
+      {
+        "subject": "Member State",
+        "relation": "ESTABLISHES",
+        "object": "supervisory authority"
+      }
+    ]
+  },
+  {
+    "chunk_id": "32016R0679_recital_112_0",
+    "entities": [
+      {
+        "text": "supervisory authority",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "data protection requirements and the rights of the data subjects appropriate to processing within the Union, including the availability of enforceable data subject rights and of effective legal remedies, including to obtain effective adminis­ trative or judicial redress and to claim compensation, in the Union or in a third country",
+        "type": "LEGAL_CONCEPT"
+      },
+      {
+        "text": "binding corporate rules",
+        "type": "PENALTY"
+      },
+      {
+        "text": "standard data protection clauses adopted by the Commission",
+        "type": "PENALTY"
+      },
+      {
+        "text": "contractual clauses authorised by a supervisory authority",
+        "type": "PENALTY"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32016R0679_recital_70_0",
+    "entities": [
+      {
+        "text": "automated filing systems",
+        "type": "LEGAL_CONCEPT"
+      },
+      {
+        "text": "personal data",
+        "type": "LEGAL_CONCEPT"
+      }
+    ],
+    "relations": [
+      {
+        "subject": "automated filing systems",
+        "relation": "SUBJECT_TO",
+        "object": "personal data"
+      }
+    ]
+  },
+  {
+    "chunk_id": "32016R0679_recital_52_0",
+    "entities": [
+      {
+        "text": "public authorities",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "computer emergency response teams (CERTs)",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "computer security incident response teams (CSIRTs)",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "providers of electronic communications networks and services",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "providers of security technologies and services",
+        "type": "ORGANIZATION"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32016R0679_article_81_0",
+    "entities": [
+      {
+        "text": "competent court",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Member State",
+        "type": "LEGAL_CONCEPT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32016R0679_article_43_8",
+    "entities": [
+      {
+        "text": "Commission",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "implementing acts",
+        "type": "LEGAL_ACT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32019R0881_article_33_0",
+    "entities": [
+      {
+        "text": "ENISA",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Interinstitutional Agreement of 25 May 1999",
+        "type": "LEGAL_ACT"
+      },
+      {
+        "text": "European Anti-Fraud Office (OLAF)",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Council Regulation (Euratom, EC) No 2185/96",
+        "type": "LEGAL_CONCEPT"
+      },
+      {
+        "text": "Regulation (EU, Euratom) No 883/2013 of the European Parliament and of the Council",
+        "type": "LEGAL_ACT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32019R0881_recital_28_0",
+    "entities": [
+      {
+        "text": "Member States",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "cybersecurity research community",
+        "type": "LEGAL_CONCEPT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32019R0881_recital_7_0",
+    "entities": [
+      {
+        "text": "cyber-hygiene",
+        "type": "LEGAL_CONCEPT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32019R0881_article_54_2",
+    "entities": [
+      {
+        "text": "manufacturers or providers",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "supplementary cybersecurity information",
+        "type": "LEGAL_CONCEPT"
+      },
+      {
+        "text": "Article 55.2",
+        "type": "LEGAL_ACT"
+      },
+      {
+        "text": "European cybersecurity certification scheme",
+        "type": "LEGAL_CONCEPT"
+      },
+      {
+        "text": "Union legal act",
+        "type": "LEGAL_CONCEPT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32019R0881_recital_70_0",
+    "entities": [],
+    "relations": []
+  },
+  {
+    "chunk_id": "32019R0881_recital_62_0",
+    "entities": [
+      {
+        "text": "ENISA",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Union’s budgetary procedure",
+        "type": "OBLIGATION"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32019R0881_recital_57_0",
+    "entities": [
+      {
+        "text": "ENISA",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Executive Director",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Management Board",
+        "type": "ORGANIZATION"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32019R0881_recital_35_0",
+    "entities": [
+      {
+        "text": "Member States",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "undertakings concerned by the incident",
+        "type": "ORGANIZATION"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32019R0881_article_54_1",
+    "entities": [
+      {
+        "text": "European cybersecurity certificates",
+        "type": "LEGAL_CONCEPT"
+      },
+      {
+        "text": "ICT products, ICT services and ICT processes",
+        "type": "LEGAL_CONCEPT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32019R0881_recital_26_0",
+    "entities": [
+      {
+        "text": "ENISA",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Directive (EU) 2016/1148",
+        "type": "LEGAL_ACT"
+      }
+    ],
+    "relations": [
+      {
+        "subject": "ENISA",
+        "relation": "SUBJECT_TO",
+        "object": "Directive (EU) 2016/1148"
+      }
+    ]
+  },
+  {
+    "chunk_id": "32022L2555_recital_57_0",
+    "entities": [
+      {
+        "text": "Member States",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "open-source software and open standards",
+        "type": "LEGAL_CONCEPT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32022L2555_recital_13_0",
+    "entities": [
+      {
+        "text": "supervisory authority",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Directive (EU) No 910/2014",
+        "type": "LEGAL_ACT"
+      },
+      {
+        "text": "Regulation (EU) No 910/2014",
+        "type": "LEGAL_CONCEPT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32022L2555_recital_134_0",
+    "entities": [
+      {
+        "text": "Member States",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "criminal penalties",
+        "type": "PENALTY"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32022L2555_recital_120_1",
+    "entities": [
+      {
+        "text": "representative",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "entity to act on the latter’s behalf",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Directive",
+        "type": "LEGAL_ACT"
+      },
+      {
+        "text": "DNS service providers",
+        "type": "OBLIGATION"
+      },
+      {
+        "text": "TLD name registries",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "entities providing domain name registration services",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "cloud computing service providers",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "data centre service providers",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "content delivery network providers",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "managed service providers",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "managed security service providers",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "providers of online marketplaces",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "online search engines and social networking services platforms",
+        "type": "OBLIGATION"
+      },
+      {
+        "text": "ENISA",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Member States",
+        "type": "LEGAL_CONCEPT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32022L2555_recital_112_0",
+    "entities": [
+      {
+        "text": "Member States",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Union law",
+        "type": "LEGAL_CONCEPT"
+      },
+      {
+        "text": "national law",
+        "type": "LEGAL_CONCEPT"
+      },
+      {
+        "text": "Europol",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "European Cybercrime Centre (EC3)",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "ENISA",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Regulation (EU) 2021/694",
+        "type": "LEGAL_ACT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32022L2555_recital_71_0",
+    "entities": [
+      {
+        "text": "Cooperation Group",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "European Parliament",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Europol",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "European Data Protection Board",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "European Union Aviation Safety Agency",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Regulation (EU) 2018/1139",
+        "type": "LEGAL_ACT"
+      },
+      {
+        "text": "European Union Agency for Space Programme",
+        "type": "ORGANIZATION"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32022L2555_recital_52_0",
+    "entities": [
+      {
+        "text": "CSIRTs network",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Member States",
+        "type": "LEGAL_CONCEPT"
+      },
+      {
+        "text": "Europol",
+        "type": "ORGANIZATION"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32022L2555_recital_44_0",
+    "entities": [
+      {
+        "text": "Member States",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Union supervisory and regulatory bodies",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Directive",
+        "type": "LEGAL_ACT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32022L2555_article_16_1",
+    "entities": [
+      {
+        "text": "EU-CyCLONe",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "Cooperation Group",
+        "type": "LEGAL_CONCEPT"
+      },
+      {
+        "text": "European Parliament and to the Council",
+        "type": "ORGANIZATION"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32022L2555_recital_17_0",
+    "entities": [
+      {
+        "text": "supervisory authority",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "enforcement regimes",
+        "type": "OBLIGATION"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32022R0868_recital_24_0",
+    "entities": [
+      {
+        "text": "third parties",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "intellectual property rights of public sector bodies",
+        "type": "LEGAL_CONCEPT"
+      },
+      {
+        "text": "Berne Convention for the Protection of Literary and Artistic Works (Berne Convention)",
+        "type": "LEGAL_ACT"
+      },
+      {
+        "text": "Agreement on Trade- related Aspects of Intellectual Property Rights (TRIPS Agreement)",
+        "type": "LEGAL_ACT"
+      },
+      {
+        "text": "World Intellectual Property Organization Copyright Treaty (WCT)",
+        "type": "LEGAL_CONCEPT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32022R0868_recital_5_1",
+    "entities": [
+      {
+        "text": "public sector bodies",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "data intermediation services providers",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "legal persons",
+        "type": "LEGAL_CONCEPT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32022R0868_recital_58_0",
+    "entities": [
+      {
+        "text": "open access scientific and academic repositories",
+        "type": "LEGAL_CONCEPT"
+      },
+      {
+        "text": "open source software development platforms",
+        "type": "ORGANIZATION"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32022R0868_recital_51_1",
+    "entities": [
+      {
+        "text": "designated legal representative",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "data intermediation services provider",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "competent authorities for data intermediation services",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "written mandate of the data intermediation services provider",
+        "type": "OBLIGATION"
+      }
+    ],
+    "relations": [
+      {
+        "subject": "designated legal representative",
+        "relation": "SUBJECT_TO",
+        "object": "written mandate of the data intermediation services provider"
+      },
+      {
+        "subject": "data intermediation services provider",
+        "relation": "IMPOSES_OBLIGATION_ON",
+        "object": "competent authorities for data intermediation services"
+      }
+    ]
+  },
+  {
+    "chunk_id": "32022R0868_recital_47_0",
+    "entities": [
+      {
+        "text": "notification procedure",
+        "type": "OBLIGATION"
+      },
+      {
+        "text": "data intermediation services",
+        "type": "ORGANIZATION"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32022R0868_recital_29_2",
+    "entities": [
+      {
+        "text": "public sector bodies",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "natural or legal persons to which the right to re-use data was granted",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "data intermediation services providers",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "recognised data altruism organisations",
+        "type": "ORGANIZATION"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32022R0868_recital_22_2",
+    "entities": [
+      {
+        "text": "public sector body",
+        "type": "ORGANIZATION"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "chunk_id": "32022R0868_article_24_0",
+    "entities": [
+      {
+        "text": "competent authorities for the registration of data altruism organisations",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "data altruism organisation",
+        "type": "LEGAL_CONCEPT"
+      }
+    ],
+    "relations": [
+      {
+        "subject": "competent authorities for the registration of data altruism organisations",
+        "relation": "RESPONSIBLE_FOR",
+        "object": "data altruism organisation"
+      }
+    ]
+  },
+  {
+    "chunk_id": "32022R0868_recital_20_0",
+    "entities": [
+      {
+        "text": "public sector bodies",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "competition law",
+        "type": "LEGAL_CONCEPT"
+      },
+      {
+        "text": "Union or national law",
+        "type": "LEGAL_ACT"
+      }
+    ],
+    "relations": [
+      {
+        "subject": "public sector bodies",
+        "relation": "SUBJECT_TO",
+        "object": "Union or national law"
+      }
+    ]
+  },
+  {
+    "chunk_id": "32022R0868_article_31_1",
+    "entities": [
+      {
+        "text": "public sector body",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "natural or legal person to which the right to re-use data was granted under Chapter II",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "data intermediation services provider",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "recognised data altruism organisation",
+        "type": "ORGANIZATION"
+      },
+      {
+        "text": "third-country court or tribunal",
+        "type": "LEGAL_ACT"
+      },
+      {
+        "text": "administrative authority of a third country",
+        "type": "LEGAL_CONCEPT"
+      }
+    ],
+    "relations": []
+  }
+]

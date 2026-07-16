@@ -1,0 +1,34 @@
+# Orchestration
+langchain==0.3.25
+langchain-community==0.3.24
+langgraph==0.4.8
+
+# LLM providers (local, via llama.cpp; hosted, via Gemini free tier for GraphRAG synthesis)
+llama-cpp-python==0.3.33
+google-genai==1.47.0
+
+# NER / entity extraction
+spacy==3.8.7
+gliner==0.2.21
+
+# Graph database
+neo4j==5.28.1
+
+# Document parsing
+pymupdf==1.26.5
+lxml==5.4.0
+requests==2.32.3
+
+# Evaluation
+mlflow==2.22.0
+
+# Utilities
+python-dotenv==1.1.0
+pydantic==2.11.5
+tqdm==4.67.1
+pandas==2.3.3
+notebook==7.5.7
+pytest==8.4.2
+
+# Front end
+streamlit==1.50.0
